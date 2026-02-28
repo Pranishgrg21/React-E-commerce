@@ -12,16 +12,16 @@ export default function Navbar ()  {
                 <Link to="/" className="navbar-link">
                     Home
                 </Link>
-                <Link to="/Checkout" className="navbar-link">
+                <Link to="/checkout" className="navbar-link">
                     Cart
                 </Link>
             </div>
             <div className="navbar-auth">
                 <div className="navbar-auth-links">
-                    <Link to="auth" className="btn btn-secondary">
+                    <Link to="/auth" className="btn btn-secondary">
                         Login
                     </Link>
-                    <Link to="auth" className="btn btn-primary">
+                    <Link to="/auth" className="btn btn-primary">
                         Signup
                     </Link>
                 </div>
