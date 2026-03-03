@@ -6,11 +6,13 @@ import Checkout from './pages/Checkout'
 import Navbar from './components/Navbar'
 
 import "./App.css"
+import AuthProvider from './context/AuthContext'
 
 
 function App () {
   return (
-    <div className="app">
+    <AuthProvider>
+      <div className="app">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -18,6 +20,7 @@ function App () {
         <Route path="/checkout" element={<Checkout/>} />
       </Routes>
     </div>
+    </AuthProvider>
   )
 }
 export default App;
